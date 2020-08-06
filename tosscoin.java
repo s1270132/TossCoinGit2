@@ -3,6 +3,10 @@ import java.util.Scanner;
 
 public class tosscoin{
 public static void main(String[] args){
+    System.out.println("Who are you?");
+    Scanner scan = new Scanner(System.in);
+    String str = scan.next();
+    System.out.println("Hello, "+str+"!");
 
     int head=0,tail=0;
     Random r = new Random();
@@ -18,5 +22,7 @@ public static void main(String[] args){
         }
     }
     System.out.println("Heads: "+head+", Tails: "+tail);
+    if(head>tail) System.out.println("You won!");
+    if(head<tail) System.out.println("You lost!");
 }
 }
