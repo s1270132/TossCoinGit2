@@ -1,7 +1,9 @@
 import java.util.Random;
+import java.util.Scanner;
 
-public class HoT{
+public class tosscoin{
 public static void main(String[] args){
+
     int head=0,tail=0;
     Random r = new Random();
     for(int i=0;i<3;i++){
